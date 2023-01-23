@@ -3,12 +3,12 @@ import React from 'react'
 const PokeDisplay = ({sprites}) => {
 
     const redVersion = sprites && sprites.versions['generation-i']['red-blue']
+    const crystalVersion = sprites && sprites.versions['generation-ii']['crystal']
 
-    console.log(redVersion);
 
 
   return (
-    <div class='flex flex-col'>
+    <div class='flex flex-col justify-center content-center text-center items-center mt-10'>
 
 
         <p>Default Sprites</p>
@@ -26,6 +26,12 @@ const PokeDisplay = ({sprites}) => {
             <img src={redVersion ? redVersion.front_default : null} alt='front red/blue' />
             <img src={redVersion ? redVersion.back_default : null} alt='back red/blue' />
         </div>
+        <p>Crystal Version Sprites</p>
+        <div class='flex flex-row'>
+            <img src={crystalVersion ? crystalVersion.front_default : null} alt='front crystal' />
+            <img src={crystalVersion ? crystalVersion.back_default : null} alt='back crystal' />
+        </div>
+        
         
     
     </div>
