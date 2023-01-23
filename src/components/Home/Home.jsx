@@ -4,13 +4,13 @@ import React from 'react'
 import NavHeader from '../NavHeader/NavHeader'
 import Search from '../Search/Search'
 
-const Home = () => {
+const Home = ({pokemon, setPokemon, getPokemon}) => {
   return (
     <div>
       <h1 class='text-3xl font-bold text-center'>Pokemon React!</h1>
 
       <div>
-        <Search />
+        <Search pokemon={pokemon} setPokemon={setPokemon}/>
       </div>
     </div>
   )
