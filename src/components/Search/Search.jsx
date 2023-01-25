@@ -20,9 +20,7 @@ const Search = ({pokemon, setPokemon}) => {
     .catch(err => console.log(err))
   }
 
-  console.log(pokemon);
-  console.log(search);
-  console.log(sprites);
+  // console.log(pokemon);
 
 
 
@@ -35,11 +33,6 @@ const Search = ({pokemon, setPokemon}) => {
       </div>
 
 
-
-
-      <div class='flex flex-row'>
-        <PokeDisplay pokemon={pokemon} sprites={sprites} />
-      </div>
     </div>
   )
 }
