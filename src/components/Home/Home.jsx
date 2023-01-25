@@ -9,9 +9,14 @@ const Home = ({pokemon, setPokemon, getPokemon}) => {
 
   const sprites = pokemon.sprites
   const name = pokemon.name && pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
+  const type = pokemon.types
+  const typeMapped = pokemon.types && pokemon.types.map((type) => type.type.name )
+
+  console.log(typeMapped);
 
 
-  console.log(name);
+
+
 
 
 
