@@ -8,7 +8,7 @@ const PokeDisplay = ({sprites}) => {
 
 
   return (
-    <div class='flex flex-col justify-center content-center text-center items-center mt-10'>
+    <div class='flex flex-col justify-center content-center text-center items-center'>
 
     {/* <h1>Sprites</h1> */}
 

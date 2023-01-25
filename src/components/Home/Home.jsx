@@ -4,6 +4,7 @@ import React from 'react'
 import NavHeader from '../NavHeader/NavHeader'
 import Search from '../Search/Search'
 import PokeDisplay from '../PokeDisplay/PokeDisplay'
+import Type from '../Type/Type'
 
 const Home = ({pokemon, setPokemon, getPokemon}) => {
 
@@ -29,8 +30,9 @@ const Home = ({pokemon, setPokemon, getPokemon}) => {
           <Search pokemon={pokemon} setPokemon={setPokemon}/>
           <p class='text-3xl font-bold text-center'>{name}</p>
         </div>
-        <div class='flex flex-row'>
+        <div class='flex flex-row mt-10'>
           <PokeDisplay sprites={sprites}/>
+          <Type typeMapped={typeMapped}/>
         </div>
       </div>
     </div>
