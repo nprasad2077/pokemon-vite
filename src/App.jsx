@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import './App.css'
 
 // Components
 import Home from './components/Home/Home'
@@ -19,7 +20,7 @@ const App = () => {
 
 
   return (
-    <div>
+    <div class='bg-stone-200'>
       <Home getPokemon={getPokemon} pokemon={pokemon} setPokemon={setPokemon} />
     </div>
   )
