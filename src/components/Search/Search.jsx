@@ -37,7 +37,7 @@ const Search = ({pokemon, setPokemon}) => {
 
 
 
-      <div>
+      <div class='flex flex-row'>
         <PokeDisplay pokemon={pokemon} sprites={sprites} />
       </div>
     </div>
