@@ -27,9 +27,12 @@ const Search = ({pokemon, setPokemon}) => {
 
 
   return (
-    <div class='flex flex-col mt-5'>
-      <input type='text' placeholder='Search Pokemon' class='mx-20 input input-bordered input-warning w-full max-w-xs self-center' onChange={handleInput} />
-      <button onClick={getPokemon} className="btn btn-primary">Submit</button>
+    <div class='flex flex-col mt-10'>
+
+      <div class='self-center flex flex-row'>
+        <input type='text' placeholder='Search Pokemon' class='mx-4 input input-bordered input-warning w-full max-w-xs mb-4' onChange={handleInput} />
+        <button onClick={getPokemon} className="btn btn-primary w-auto">Submit</button>
+      </div>
 
 
 
